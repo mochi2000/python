@@ -1,7 +1,3 @@
-print("hello")
-
-name = "yama"
-
-print(name)
-
+print("your name?", end="")
+name = input()
 print("hello %s" %name)
