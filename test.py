@@ -4,5 +4,5 @@ msg = "hello"
 print(msg)
 
 msg = "こんにちは"
-m3 = msg[2]
-print(m3)
+s = msg[0:4]
+print(s)
