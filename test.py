@@ -1,8 +1,14 @@
 
 
-msg = "hello"
+msg = "hello"+ " " "poo" + " " + "ok"
 print(msg)
 
+msg2 = msg.split(" ")
+
+print(msg2)
+print(msg2[1])
+
 msg = "こんにちは"
-s = msg[0:4]
+s = msg[1:]
 print(s)
+
