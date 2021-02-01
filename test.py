@@ -1,14 +1,7 @@
+docs = ['a','i','u','e','o']
 
+for d in docs:
+  s = d + '子音'
+  print(s)
 
-msg = "hello"+ " " "poo" + " " + "ok"
-print(msg)
-
-msg2 = msg.split(" ")
-
-print(msg2)
-print(msg2[1])
-
-msg = "こんにちは"
-s = msg[1:]
-print(s)
 
