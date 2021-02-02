@@ -1,7 +1,5 @@
-docs = ['a','i','u','e','o']
+import math as ma
+from math import sqrt
 
-for d in docs:
-  s = d + '子音'
-  print(s)
-
-
+value = sqrt(6)
+print(value)
