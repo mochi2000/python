@@ -8,3 +8,9 @@ for filename in tmp:
   if os.path.isfile(p):
       files.append(filename)
 print(files[:10])
+
+for filename in files:
+  ext = filename.split('.')[-1]
+  p = path + '/' + ext
+  if not os.path.exists(p):
+      os.mkdir(p)
