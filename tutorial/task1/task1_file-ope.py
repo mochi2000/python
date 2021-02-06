@@ -17,7 +17,7 @@ for filename in files:
 
 import shutil
 
-for filename in file:
+for filename in files:
   from_path = path + '/' + filename
   ext = filename.split('.')[-1]
   to_path = path + '/' + ext
