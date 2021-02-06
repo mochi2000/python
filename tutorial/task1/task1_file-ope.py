@@ -14,3 +14,11 @@ for filename in files:
   p = path + '/' + ext
   if not os.path.exists(p):
       os.mkdir(p)
+
+import shutil
+
+for filename in file:
+  from_path = path + '/' + filename
+  ext = filename.split('.')[-1]
+  to_path = path + '/' + ext
+  shutil.move(from_path, to_path)
