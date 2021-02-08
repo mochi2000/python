@@ -1,14 +1,16 @@
 import os
 import shutil
+import datetime
 
 path = './task1/data'
 tmp = os.listdir(path)
 
 for filename in files:
   from_path = path + '/' + filename
-  if os.path.isfile(from_path):
-    ext =filename.split('.')[-1]
-    to_path = path + '/' + ext
-    if not os.path.exists(to_path):
-      os.mkdir(to_path)
-      shutil.move(from_path, to_path)
+  d = os.path.getctime(from_path)
+  dd = datetime.date.fromtimestamp(d)
+  year = str(dd.year)
+  to_path = path + '/' + year
+  if not os.path.exists(to_path):
+    os.mkdir(to_path)
+  shutil.move(from_path, to_path)
