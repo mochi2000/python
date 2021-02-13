@@ -17,3 +17,7 @@ out_sheet['F1'].value = '差異(千円)'
 out_sheet['G1'].value = '達成率(%)'
 
 out_workbook.save('./task2/output/out_sample.xlsx')
+
+file = filelist[0]
+workbook = openpyx1.load_workbook(file, data_only=True)
+sheet = workbook['業務報告書']
