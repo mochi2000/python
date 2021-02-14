@@ -21,3 +21,11 @@ out_workbook.save('./task2/output/out_sample.xlsx')
 file = filelist[0]
 workbook = openpyx1.load_workbook(file, data_only=True)
 sheet = workbook['業務報告書']
+
+report_date = sheet['X1'].value
+office = sheet['X2'].value
+person = sheet['X3'].value
+sales_goal = sheet['H9'].value
+sales_result = sheet['H10'].value
+sales_diff = sheet['H11'].value
+sales_percentage = sheet['H12'].value
