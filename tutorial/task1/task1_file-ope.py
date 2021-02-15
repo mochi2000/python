@@ -29,3 +29,11 @@ sales_goal = sheet['H9'].value
 sales_result = sheet['H10'].value
 sales_diff = sheet['H11'].value
 sales_percentage = sheet['H12'].value
+
+out_sheet.cell(row=2, column=1).value = report_date
+out_sheet.cell(row=2, column=2).value = office
+out_sheet.cell(row=2, column=3).value = person
+out_sheet.cell(row=2, column=4).value = sales_goal
+out_sheet.cell(row=2, column=5).value = sales_result
+out_sheet.cell(row=2, column=6).value = sales_diff
+out_sheet.cell(row=2, column=7).value = sales_percentage
