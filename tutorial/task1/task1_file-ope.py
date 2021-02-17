@@ -38,5 +38,7 @@ out_sheet.cell(row=2, column=5).value = sales_result
 out_sheet.cell(row=2, column=6).value = sales_diff
 out_sheet.cell(row=2, column=7).value = sales_percentage
 
-out_sheet.cell(row=2, column=1).number_format = '0.0%'
+out_sheet.cell(row=2, column=7).number_format = '0.0%'
 out_sheet.cell(row=2, column=1).number_format = 'yyyy年mm月dd日'
+
+
