@@ -41,4 +41,5 @@ for = i, file in enumerate(filelist)
   out_sheet.cell(row=2, column=7).number_format = '0.0%'
   out_sheet.cell(row=2, column=1).number_format = 'yyyy年mm月dd日'
 
-
+out_filename = './task2/output/月報一覧_202001.xlsx'
+out_workbook.save(out_filename)
